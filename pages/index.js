@@ -1,6 +1,5 @@
 import Head from "next/head";
 import localFont from "next/font/local";
-import Navbar from "@/components/navbar";
 // import Image from "next/image";
 
 const geistSans = localFont({
@@ -37,7 +36,7 @@ export default function Home() {
   <video class="background-video" autoPlay muted loop>
     <source src="/aivideo2.mp4" type="video/mp4" />
   </video>
-  <div className="m-auto flex justify-center">
+  <div className="m-auto flex justify-center mb-60">
   <div class="content ">
 
     {/* <!-- Your content here --> */}
@@ -48,7 +47,6 @@ export default function Home() {
   </div></div>
 
 
-
-    </>
+</>
   );
 }

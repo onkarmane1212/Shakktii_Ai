@@ -1,10 +1,13 @@
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
-import Scroll from "@/components/scroll"
+import Services from "@/components/services";
 
 export default function App({ Component, pageProps }) {
   return <>
   <Navbar /> 
+ 
+  <Component {...pageProps} />;
+  <Services />
 
-  <Component {...pageProps} />;</>
+  </>
 }
