@@ -33,7 +33,7 @@ export default function Home() {
 
 
 
-<body>
+
   <video class="background-video" autoPlay muted loop>
     <source src="/aivideo2.mp4" type="video/mp4" />
   </video>
@@ -41,11 +41,12 @@ export default function Home() {
   <div class="content ">
 
     {/* <!-- Your content here --> */}
-    <img src='Logo.gif' class="h-60 w-50" />
-    <h1 class="text-5xl font-bold">Shakktii AI</h1>
-    <p class="mt-4 text-xl">Explore new horizons with us.</p>
+    <img src='Logo.gif' class="h-60 w-50 m-auto" />
+    <h1 class="text-5xl font-bold text-center ">Shakktii AI</h1>
+    <p class="mt-4 text-xl">EXPLORE UNLIMITED STRENGTH OF AI </p>
+    <p class="mt-4 text-xl text-center">WITH US</p>
   </div></div>
-</body>
+
 
 
     </>
