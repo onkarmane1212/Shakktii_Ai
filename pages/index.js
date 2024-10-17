@@ -23,19 +23,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div class="relative h-screen ">
+     
         
-  <video className="absolute inset-0 w-full h-full  object-cover -z-50"  autoPlay muted loop>
+  {/* <video className="absolute inset-0 w-full h-full  object-cover "  autoPlay muted loop>
     <source src="/aivideo2.mp4" type="video/mp4" />
-  </video><Navbar />
-  <div class="absolute inset-0  flex items-center justify-start ml-10  pl-16">
-    <div class="text-center text-white ">
-      <img src='Logo.gif' className="h-60 w-50"/>
-      <h1 class="text-5xl font-bold">Shakktii AI</h1>
-      <p class="mt-4 text-xl">Explore new horizons with us.</p>
-     </div>
-  </div>
-</div>
+  </video> */}
+  
+  
+
+
+
+<body>
+  <video class="background-video" autoPlay muted loop>
+    <source src="/aivideo2.mp4" type="video/mp4" />
+  </video>
+  <div className="m-auto flex justify-center">
+  <div class="content ">
+
+    {/* <!-- Your content here --> */}
+    <img src='Logo.gif' class="h-60 w-50" />
+    <h1 class="text-5xl font-bold">Shakktii AI</h1>
+    <p class="mt-4 text-xl">Explore new horizons with us.</p>
+  </div></div>
+</body>
+
 
     </>
   );
