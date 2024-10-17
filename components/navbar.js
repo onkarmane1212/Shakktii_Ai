@@ -78,14 +78,14 @@ import classNames from 'classnames';
 
 const NavLink = ({ href, label, isMobile }) => (
   <Link href={href}>
-    <a
+    <span
       className={classNames(
         'hover:text-orange-600',
         isMobile ? 'block text-gray-800 py-2' : 'text-white'
       )}
     >
       {label}
-    </a>
+    </span>
   </Link>
 );
 
