@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* 
+.clip-path-circle-1 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%); }
+.clip-path-circle-2 { clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%); }
+.clip-path-circle-3 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%); }
+.clip-path-circle-4 { clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%); } */
+
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+#large-header {
+  background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-title {
+    font-size: 3em;
+  }
+}
+
+
 body {
   margin: 0; /* Remove default margin */
   height: 100vh; /* Set the body height to cover the viewport */
@@ -24,9 +69,4 @@ body {
   color: white; /* Set text color */
   padding: 20px;
   margin-top: 100px; /* Optional padding */
-}
-/* 
-.clip-path-circle-1 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%); }
-.clip-path-circle-2 { clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%); }
-.clip-path-circle-3 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%); }
-.clip-path-circle-4 { clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%); } */
+} 
