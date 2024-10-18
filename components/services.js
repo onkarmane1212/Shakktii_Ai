@@ -146,7 +146,7 @@ const services = () => {
   
 
 
-  <div className="relative bg-gray-800 p-10 transition-transform duration-300 hover:shadow-lg">
+  <div className="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             {images1.map((src, index) => (
               <div
@@ -168,7 +168,7 @@ const services = () => {
           </div>
           <button
                 type="button"
-                className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -left-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => prevSlide(1)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -180,7 +180,7 @@ const services = () => {
 
             <button
                 type="button"
-                className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -right-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => nextSlide(1)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -192,7 +192,7 @@ const services = () => {
         
         </div>
 
-    <div class="relative bg-gray-800 p-10 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images2.map((src, index) => (
@@ -219,7 +219,7 @@ const services = () => {
 
             <button
                 type="button"
-                className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -left-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => prevSlide(2)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -231,7 +231,7 @@ const services = () => {
 
             <button
                 type="button"
-                className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -right-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => nextSlide(2)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -245,7 +245,7 @@ const services = () => {
      </div>
 
 
-    <div class="relative bg-gray-800 p-10 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images3.map((src, index) => (
@@ -272,7 +272,7 @@ const services = () => {
 
             <button
                 type="button"
-                className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -left-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => prevSlide(3)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -284,7 +284,7 @@ const services = () => {
 
             <button
                 type="button"
-                className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -right-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => nextSlide(3)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -296,7 +296,7 @@ const services = () => {
        
    
      </div>
-    <div class="relative bg-gray-800 p-10 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images4.map((src, index) => (
@@ -323,7 +323,7 @@ const services = () => {
             </div>
             <button
                 type="button"
-                className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -left-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => prevSlide(4)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
@@ -335,7 +335,7 @@ const services = () => {
 
             <button
                 type="button"
-                className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
+                className="absolute top-0 -right-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => nextSlide(4)}
             >
                 <span className="w-10 h-10 flex items-center justify-center to-transparent rounded-full">
