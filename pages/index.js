@@ -33,9 +33,9 @@ export default function Home() {
 
 
 
-  <img class="background-video pb-6" src="/bgvideo.gif" autoPlay muted loop />
-    {/* <source src="/bgvideo.gif" type="video/mp4" />
-  </video> */}
+  <video class="background-video pb-6"  autoPlay muted loop >
+    <source src="/bgvideo.mp4" type="video/mp4" />
+  </video>
   <div className="m-auto flex justify-center mb-28">
   <div class="content ">
 
