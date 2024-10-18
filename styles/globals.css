@@ -13,7 +13,7 @@ body {
   top: 0; /* Align to the top */
   left: 0; /* Align to the left */
   width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  height: 129%; /* Full height */
   object-fit: cover; /* Cover the entire area */
   z-index: -1; /* Send it to the back */
 }
@@ -22,7 +22,8 @@ body {
   position: relative; /* Position relative for content stacking */
   z-index: 1; /* Bring content to the front */
   color: white; /* Set text color */
-  padding: 20px; /* Optional padding */
+  padding: 20px;
+  margin-top: 100px; /* Optional padding */
 }
 /* 
 .clip-path-circle-1 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%); }

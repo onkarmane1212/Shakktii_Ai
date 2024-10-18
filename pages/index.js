@@ -34,7 +34,7 @@ export default function Home() {
 
 
   <video class="background-video pb-6" autoPlay muted loop>
-    <source src="/aivideo2.mp4" type="video/mp4" />
+    <source src="/bgvideo.mp4" type="video/mp4" />
   </video>
   <div className="m-auto flex justify-center mb-28">
   <div class="content ">
@@ -42,8 +42,9 @@ export default function Home() {
     {/* <!-- Your content here --> */}
     <img src='Logo.gif' class="h-60 w-50 m-auto" />
     <h1 class="text-5xl font-bold text-center ">Shakktii AI</h1>
-    <p class="mt-4 text-xl">EXPLORE UNLIMITED STRENGTH OF AI </p>
-    <p class="mt-4 text-xl text-center">WITH US</p>
+    <p class="mt-4 text-xl">EXPLORE UNLIMITED STRENGTH OF</p>
+    <p class="mt-4 text-xl text-center">AI</p>
+    
   </div></div>
 
 
