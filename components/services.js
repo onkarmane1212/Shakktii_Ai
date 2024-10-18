@@ -62,11 +62,11 @@ const services = () => {
     ];
     const content4 = [
       {
-        title: "UI/UX Creative Design",
+        title: "AI Voice",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames."
       },
       {
-        title: "Visual Graphic Design",
+        title: "AI Video",
         description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
       },
       
@@ -308,12 +308,12 @@ const services = () => {
                         <img
           src={src}
           className="absolute block w-full h-full object-cover transition-opacity duration-300 ease-in-out"
-          style={{ opacity: currentIndex3 === index ? 1 : 0.5 }}
+          style={{ opacity: currentIndex4 === index ? 1 : 0.5 }}
           alt={`Image ${index + 1}`}
         />
             <div class="relative  inset-0   flex flex-col  items-center justify-center text-white z-10 bg-gray-800 bg-opacity-50">
-            <h2 className="font-playfair lg:pt-36 pt-10 text-2xl xl:text-3xl font-bold text-center">{content3[index].title}</h2>
-          <p className="pb-10 lg:pb-44 transition-colors duration-300 text-center">{content3[index].description}</p>
+            <h2 className="font-playfair lg:pt-36 pt-10 text-2xl xl:text-3xl font-bold text-center">{content4[index].title}</h2>
+          <p className="pb-10 lg:pb-44 transition-colors duration-300 text-center">{content4[index].description}</p>
            </div>
                     </div>
                 ))}
