@@ -1,5 +1,6 @@
 import Head from "next/head";
 import localFont from "next/font/local";
+import { useEffect, useRef } from 'react';
 // import Image from "next/image";
 
 const geistSans = localFont({
@@ -14,6 +15,31 @@ const geistMono = localFont({
 });
 
 export default function Home() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch(() => {
+        // Handle autoplay rejection or errors
+      });
+    }
+  }, []);
+  <style jsx>{`
+    /* Hide any media controls */
+    video::-internal-media-controls {
+      display: none !important;
+    }
+
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+
+    /* Disable interactions on the video */
+    .background-video {
+      pointer-events: none;
+    }
+  `}</style>
   return (
     <>
       <Head>
@@ -33,9 +59,21 @@ export default function Home() {
 
 
 
-  <video class="background-video pb-6"  autoPlay muted loop >
-    <source src="https://videos.pexels.com/video-files/3129595/3129595-uhd_2560_1440_30fps.mp4" type="video/mp4" />
-  </video>
+  <video
+        className="background-video pb-6"
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      >
+        <source
+          src="https://videos.pexels.com/video-files/3129595/3129595-uhd_2560_1440_30fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
   <div className="m-auto flex justify-center mb-28">
   <div class="content ">
 
