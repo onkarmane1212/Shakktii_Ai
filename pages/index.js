@@ -79,12 +79,9 @@ video::-webkit-media-controls {
         loop
         playsInline
         preload="auto"
+        src="https://videos.pexels.com/video-files/3129595/3129595-uhd_2560_1440_30fps.mp4"
       >
-        <source
-          src="https://videos.pexels.com/video-files/3129595/3129595-uhd_2560_1440_30fps.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
+        
       </video>
   <div className="m-auto flex justify-center mb-28">
   <div class="content ">
