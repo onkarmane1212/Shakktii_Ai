@@ -39,6 +39,17 @@ export default function Home() {
     .background-video {
       pointer-events: none;
     }
+      video::-internal-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+.background-video {
+  pointer-events: none;
+}
+
   `}</style>
   return (
     <>
@@ -62,6 +73,7 @@ export default function Home() {
   <video
         className="background-video pb-6"
         ref={videoRef}
+        controls
         autoPlay
         muted
         loop
