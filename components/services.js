@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-// import '@/styles/services.module.css'
+
 
 const services = () => {
   const [currentIndex1, setCurrentIndex1] = useState(0);
@@ -127,7 +127,7 @@ const services = () => {
       return () => clearInterval(interval); // Cleanup on component unmount
     }, []);
   
-
+    
   
     return <>
     <section class="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
@@ -146,7 +146,7 @@ const services = () => {
   
 
 
-  <div className="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
+  <div className="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             {images1.map((src, index) => (
               <div
@@ -192,7 +192,7 @@ const services = () => {
         
         </div>
 
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images2.map((src, index) => (
@@ -245,7 +245,7 @@ const services = () => {
      </div>
 
 
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images3.map((src, index) => (
@@ -296,7 +296,7 @@ const services = () => {
        
    
      </div>
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images4.map((src, index) => (
@@ -355,4 +355,3 @@ const services = () => {
     </>;
 }
 export default services;
-

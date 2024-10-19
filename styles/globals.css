@@ -25,8 +25,3 @@ body {
   padding: 20px;
   margin-top: 100px; /* Optional padding */
 }
-/* 
-.clip-path-circle-1 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 100%); }
-.clip-path-circle-2 { clip-path: circle(calc(6.25rem + 7.5vw) at 0% 100%); }
-.clip-path-circle-3 { clip-path: circle(calc(6.25rem + 7.5vw) at 100% 0%); }
-.clip-path-circle-4 { clip-path: circle(calc(6.25rem + 7.5vw) at 0% 0%); } */
