@@ -133,13 +133,13 @@ const LogoCarousel = () => {
     {
       id: 1,
       title: "First Slide",
-      imgSrc: "/shakkti.mp4",
+      imgSrc: "/social.jpg",
       alt: "First Slide",
     },
     {
       id: 2,
       title: "Second Slide",
-      imgSrc: "/sheet.mp4",
+      imgSrc: "/digital.jpg",
       alt: "Second Slide",
     },
     {
@@ -179,20 +179,14 @@ const LogoCarousel = () => {
               key={slide.id}
               className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
             >
-              {slide.title && (
-                <span className="absolute top-1/2 left-1/2 text-lg font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-2xl lg:text-3xl">
-                  {slide.title}
-                </span>
-              )}
-              <video
-                src={slide.imgSrc}
-                className="block w-full h-full object-cover"
-                type="video/mp4"
-                autoPlay
-                loop
-                muted
-                
-              />
+             
+<a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row sm:flex-col md:max-w-8xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 lg:h-full">
+    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:max-w-3xl md:rounded-none md:rounded-s-lg " src={slide.imgSrc} alt="" />
+    <div class="flex flex-col justify-between m-auto leading-normal">
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{slide.title}</h5>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{slide.alt}</p>
+    </div>
+</a>
             </div>
           ))}
         </div>
@@ -237,7 +231,7 @@ const LogoCarousel = () => {
             <span className="hidden">Next</span>
           </span>
         </button>
-      </div>
+       </div>
     </div>
   );
 };

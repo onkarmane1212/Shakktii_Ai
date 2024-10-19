@@ -4,6 +4,7 @@ import Services from "@/components/services";
 import LogoCarousel from "@/components/LogoCarousel";
 
 export default function App({ Component, pageProps }) {
+  
   return <>
   <Navbar /> 
  
