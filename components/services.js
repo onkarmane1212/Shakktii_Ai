@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react';
-// import '@/styles/services.module.css'
+
 
 const services = () => {
   const [currentIndex1, setCurrentIndex1] = useState(0);
@@ -127,11 +127,11 @@ const services = () => {
       return () => clearInterval(interval); // Cleanup on component unmount
     }, []);
   
-
+    
   
     return <>
     <section class="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
-  <span class="text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
+  <span class="mt-64 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
     what we're offering 
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-indigo-600 ml-3 w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
@@ -140,14 +140,14 @@ const services = () => {
   <h1 class="text-white text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug">
     Services Built Specifically for your Business
   </h1>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+  <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
 
 
   
 
 
-  <div className="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+  <div className="card relative -z-1 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+          <div className=" relative h-56 z-10 overflow-hidden rounded-lg md:h-96">
             {images1.map((src, index) => (
               <div
                 key={index}
@@ -191,9 +191,10 @@ const services = () => {
             </button>
         
         </div>
+        
 
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div class="card -z-1 relative  p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images2.map((src, index) => (
                     <div
@@ -245,7 +246,7 @@ const services = () => {
      </div>
 
 
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images3.map((src, index) => (
@@ -296,7 +297,7 @@ const services = () => {
        
    
      </div>
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg">
+    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images4.map((src, index) => (
@@ -355,4 +356,3 @@ const services = () => {
     </>;
 }
 export default services;
-
