@@ -46,7 +46,7 @@ const Slider = () => {
   return (
     <>
       <div className="max-w-2xl m-auto">
-        <div className="relative mb-4 mt-4 ml-4">
+        <div className="relative ">
           <div className="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
             {slides.map((slide, index) => (
               <div
