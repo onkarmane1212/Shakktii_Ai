@@ -31,7 +31,7 @@ body {
 @keyframes appear{
   from{
     opacity:0;
-    clip-path: inset(100% 100% 0% 0%);
+    clip-path: inset(0% 100% 0% 100%);
     /* scale:0.5; */
     
   }
@@ -55,6 +55,7 @@ body {
   border-radius: 10px;
 }
 
+
 @property --angle{
   syntax:"<angle>";
   initial-value: 0deg;
@@ -73,7 +74,7 @@ body {
   translate: -50% -50%;
   
   padding: 3px;
-  animation: 3s spin linear infinite;
+  animation: 10s spin linear infinite;
 }
 
 .card::before{
@@ -89,4 +90,48 @@ body {
   to{
       --angle:350deg;
   }
+}
+
+
+@property --anglee{
+  syntax:"<anglee>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+
+/* 
+::-webkit-scrollbar{
+  width: 0.9rem;
+
+}
+::-webkit-scrollbar-track{
+  background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#642bff,#ff22e6);
+  border-radius: 10px;
+} */
+
+/* Default scrollbar styles */
+::-webkit-scrollbar {
+  z-index: 100;
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 10px;
+}
+
+
+
+.shadow-bottom  {
+  box-shadow: 0px 21px 10px -15px #111;    
 }

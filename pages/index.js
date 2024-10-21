@@ -1,6 +1,7 @@
 import Head from "next/head";
 import localFont from "next/font/local";
 // import Image from "next/image";
+import Script from "next/script";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,13 +42,26 @@ export default function Home() {
 
     {/* <!-- Your content here --> */}
     <img src='Logo.gif' class=" h-60 w-50 m-auto" />
-    <h1 class=" text-5xl font-bold text-center ">Shakktii AI</h1>
-    <p class="mt-4 text-xl text-center">EXPLORE UNLIMITED STRENGTH OF</p>
-    <p class="mt-4 text-xl text-center">AI</p>
+<h1 className="text-center font-bold text-4xl ">Shakktii AI</h1>
+<div className="container">    <span class=" text-xl font-semibold text-center animated-text"></span>
+</div> {/* <p class="mt-4 text-xl text-center">EXPLORE UNLIMITED STRENGTH OF</p> */}
+    {/* <p class="mt-4 text-xl text-center">AI</p> */}
     
   </div></div>
+  <Script 
+        src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" 
+        strategy="afterInteractive" 
+        onLoad={() => {
+          new Typed('.animated-text', {
+            strings: ['EXPLORE UNLIMITED STRENGTH', 'WITH ARTIFOCIAL INTELLIGENCE'],
+            typeSpeed: 50,
+            backSpeed:60,
+            backDelay:1000,
+            loop:true,
 
-
+          });
+        }} 
+      />
 </>
   );
 }

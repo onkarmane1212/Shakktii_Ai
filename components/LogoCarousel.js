@@ -9,19 +9,31 @@ const LogoCarousel = () => {
     {
       id: 1,
       title: "First Slide",
-      imgSrc: "/social.jpg",
+      imgSrc: "/modi.gif",
       alt: "First Slide",
     },
     {
       id: 2,
       title: "Second Slide",
-      imgSrc: "/digital.jpg",
+      imgSrc: "/india.gif",
       alt: "Second Slide",
     },
     {
       id: 3,
       title: "Third Slide",
-      imgSrc: "/digital.jpg",
+      imgSrc: "/maharastra.gif",
+      alt: "Third Slide",
+    },
+    {
+      id: 3,
+      title: "Third Slide",
+      imgSrc: "/rajmudra.gif",
+      alt: "Third Slide",
+    },
+    {
+      id: 4,
+      title: "fourth Slide",
+      imgSrc: "/AI.gif",
       alt: "Third Slide",
     },
   ];
@@ -41,7 +53,7 @@ const LogoCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
@@ -49,15 +61,17 @@ const LogoCarousel = () => {
   return (
     <div className="view  max-w-full mx-auto">
       <div className="  slider relative lg:-mt-32 md:-mt-32 sm:-mt-20">
+      <h2 className='z-90 slider text-4xl font-bold text-center bg-white p-2'>Our Past Experiance</h2>
         <div className="lg:overflow-hidden relative h-56 sm:h-64 md:h-80 lg:h-96">
+          
           {slides.map((slide, index) => (
             <div
               key={slide.id}
               className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
             >
              
-<a href="#" class=" flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row sm:flex-col md:max-w-8xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 lg:h-full">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:max-w-3xl md:rounded-none md:rounded-s-lg " src={slide.imgSrc} alt="" />
+<a href="#" class=" flex flex-col items-center bg-white border border-gray-200  md:flex-row sm:flex-col md:max-w-8xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 lg:h-full">
+    <img class="object-cover m-auto shadow-bottom md:h-auto md:max-w-3xl rounded-b-full  " src={slide.imgSrc} alt="" />
 
     <div class="flex flex-col justify-between m-auto leading-normal">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{slide.title}</h5>

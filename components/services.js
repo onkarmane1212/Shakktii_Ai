@@ -146,7 +146,7 @@ const services = () => {
   
 
 
-  <div className="card relative -z-1 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+  <div className="card relative -z-1 p-2 transition-transform duration-700 hover:shadow-lg lg:m-10">
           <div className=" relative h-56 z-10 overflow-hidden rounded-lg md:h-96">
             {images1.map((src, index) => (
               <div
@@ -155,13 +155,13 @@ const services = () => {
               >
                  <img
           src={src}
-          className="absolute block w-full h-full object-cover transition-opacity duration-300 ease-in-out"
+          className="absolute block w-full h-full object-cover transition-opacity duration-700 ease-in-out"
           style={{ opacity: currentIndex1 === index ? 1 : 0.5 }}
           alt={`Image ${index + 1}`}
         />
                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 bg-black bg-opacity-50">
           <h2 className="font-playfair text-2xl xl:text-3xl font-bold text-center">{content1[index].title}</h2>
-          <p className="p transition-colors duration-300 text-center">{content1[index].description}</p>
+          <p className="p transition-colors duration-700 text-center">{content1[index].description}</p>
         </div>
       </div>
             ))}
@@ -178,7 +178,7 @@ const services = () => {
                 </span>
             </button>
 
-            <button
+            <button 
                 type="button"
                 className="absolute top-0 -right-10 z-30 flex items-center justify-center h-full px-4 cursor-pointer"
                 onClick={() => nextSlide(1)}
@@ -246,8 +246,8 @@ const services = () => {
      </div>
 
 
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div class=" card -z-1 relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images3.map((src, index) => (
                     <div
@@ -297,8 +297,8 @@ const services = () => {
        
    
      </div>
-    <div class="relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div class="relative card -z-1 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images4.map((src, index) => (
                     <div
