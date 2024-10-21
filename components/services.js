@@ -131,7 +131,7 @@ const services = () => {
   
     return <>
     <section class="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
-  <span class="mt-96 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
+  <span class="mt-96 pt-14 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
     what we're offering 
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-indigo-600 ml-3 w-6 h-6">
       <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
