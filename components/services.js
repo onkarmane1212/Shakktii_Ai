@@ -146,7 +146,7 @@ const services = () => {
   
 
 
-  <div className="card relative -z-1 p-2 transition-transform duration-700 hover:shadow-lg lg:m-10">
+  <div className="card relative -z-1 mb-6 p-2 transition-transform duration-700 hover:shadow-lg lg:m-10">
           <div className=" relative h-56 z-10 overflow-hidden rounded-lg md:h-96">
             {images1.map((src, index) => (
               <div
@@ -193,7 +193,7 @@ const services = () => {
         </div>
         
 
-    <div class="card -z-1 relative  p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div class="card -z-1 relative mb-6  p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images2.map((src, index) => (
@@ -246,7 +246,7 @@ const services = () => {
      </div>
 
 
-    <div class=" card -z-1 relative bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div class=" card -z-1 relative mb-6 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images3.map((src, index) => (
@@ -297,7 +297,7 @@ const services = () => {
        
    
      </div>
-    <div class="relative card -z-1 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div class="relative mb-6 card -z-1 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images4.map((src, index) => (
@@ -345,7 +345,7 @@ const services = () => {
                     </svg>
                 </span>
             </button>
-       
+                 
     
      </div>
     
@@ -356,3 +356,4 @@ const services = () => {
     </>;
 }
 export default services;
+

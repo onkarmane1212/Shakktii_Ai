@@ -3,117 +3,86 @@
 @tailwind utilities;
 
 body {
-  margin: 0; /* Remove default margin */
-  height: 100vh; /* Set the body height to cover the viewport */
-  /* overflow: hidden; Prevent scrollbars from appearing */
+  margin: 0;
+  height: 100vh;
+  
 }
 
 .background-video {
-  position: absolute; /* Position it absolutely */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  width: 100%; /* Full width */
-  height: 129%; /* Full height */
-  object-fit: cover; /* Cover the entire area */
-  z-index: -1; /* Send it to the back */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 129%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .content {
-  position: relative; /* Position relative for content stacking */
-  z-index: 1; /* Bring content to the front */
-  color: white; /* Set text color */
+  position: relative;
+  z-index: 1;
+  color: white;
   padding: 20px;
-  margin-top: 100px; /* Optional padding */
+  margin-top: 100px;
 }
 
-
-
-@keyframes appear{
-  from{
-    opacity:0;
+@keyframes appear {
+  from {
+    opacity: 0;
     clip-path: inset(0% 100% 0% 100%);
-    /* scale:0.5; */
-    
   }
-    to{
-    opacity:1;
-    clip-path: inset(0 0 0 0);
-   
-    }
+  to {
+    opacity: 1;
+    clip-path: inset(0);
+  }
 }
-.slider{
-  animation:appear linear ;
+
+.slider {
+  animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 }
 
-
-.card{
- 
+.card {
   background-color: black;
   text-align: center;
   border-radius: 10px;
+  position: relative; /* Added for absolute positioning of pseudo-elements */
 }
 
-
-@property --angle{
-  syntax:"<angle>";
+@property --angle {
+  syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
-.card::after ,.card::before{
-  
+.card::after,
+.card::before {
   content: "";
   position: absolute;
+  top: 50%;
+  left: 50%;
   height: 100%;
   width: 100%;
-  background-image:conic-gradient(from var(--angle),transparent, blue ,red,green,#ff0095,yellow);
-  top:50%;
-  left:50%;
-  translate: -50% -50%;
-  
+  background-image: conic-gradient(from var(--angle), transparent, blue, red, green, #ff0095, yellow);
+  transform: translate(-50%, -50%);
   padding: 3px;
-  animation: 40s spin linear infinite;
+  animation: spin 40s linear infinite;
 }
 
-.card::before{
-  filter: blur(1.5rem);
-  opacity: 0.5;
-
+.card::before {
+  filter: blur(1rem);
+  opacity: 1;
 }
 
-@keyframes spin{
-  from{
-      --angle:0deg;
+@keyframes spin {
+  from {
+    --angle: 0deg;
   }
-  to{
-      --angle:350deg;
+  to {
+    --angle: 350deg;
   }
 }
-
-
-@property --anglee{
-  syntax:"<anglee>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-
-
-/* 
-::-webkit-scrollbar{
-  width: 0.9rem;
-
-}
-::-webkit-scrollbar-track{
-  background: #d1e5ff;
-}
-
-::-webkit-scrollbar-thumb{
-  background: linear-gradient(#642bff,#ff22e6);
-  border-radius: 10px;
-} */
 
 /* Default scrollbar styles */
 ::-webkit-scrollbar {
@@ -130,14 +99,8 @@ body {
   border-radius: 10px;
 }
 
-
-
-.shadow-bottom  {
+.shadow-bottom {
   box-shadow: 0px 21px 10px -15px #111;    
 }
-
-
-
-
 
 
