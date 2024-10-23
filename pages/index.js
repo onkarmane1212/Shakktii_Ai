@@ -34,18 +34,18 @@
 
 
 
-//   <video class="background-video pb-6" autoPlay muted loop>
+//   <video classname="background-video pb-6" autoPlay muted loop>
 //     <source src="/1019.mp4" type="video/mp4" />
 //   </video>
 //   <div className="m-auto flex justify-center mb-28">
-//   <div class="content ">
+//   <div classname="content ">
 
 //     {/* <!-- Your content here --> */}
-//     <img src='Logo.gif' class=" h-60 w-50 m-auto" />
+//     <img src='Logo.gif' classname=" h-60 w-50 m-auto" />
 // <h1 className="text-center font-bold text-4xl ">Shakktii AI</h1>
-// <div className="container">    <span class=" text-xl font-semibold text-center animated-text"></span>
-// </div> {/* <p class="mt-4 text-xl text-center">EXPLORE UNLIMITED STRENGTH OF</p> */}
-//     {/* <p class="mt-4 text-xl text-center">AI</p> */}
+// <div className="container">    <span classname=" text-xl font-semibold text-center animated-text"></span>
+// </div> {/* <p classname="mt-4 text-xl text-center">EXPLORE UNLIMITED STRENGTH OF</p> */}
+//     {/* <p classname="mt-4 text-xl text-center">AI</p> */}
     
 //   </div></div>
 //   <Script 

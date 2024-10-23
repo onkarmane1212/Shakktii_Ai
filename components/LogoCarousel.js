@@ -70,12 +70,12 @@
 //               className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${currentIndex === index ? 'opacity-100' : 'opacity-0'}`}
 //             >
              
-// <a href="#" class=" flex flex-col items-center bg-white border border-gray-200  md:flex-row sm:flex-col md:max-w-8xl hover:bg-gray-100 lg:h-full">
-//     <img class="object-cover m-auto lg:ml-40 mb-20 shadow-bottom md:h-auto md:max-w-3xl rounded-b-full  " src={slide.imgSrc} alt="" />
+// <a href="#" className=" flex flex-col items-center bg-white border border-gray-200  md:flex-row sm:flex-col md:max-w-8xl hover:bg-gray-100 lg:h-full">
+//     <img className="object-cover m-auto lg:ml-40 mb-20 shadow-bottom md:h-auto md:max-w-3xl rounded-b-full  " src={slide.imgSrc} alt="" />
 
-//     <div class="flex flex-col lg:ml-96 justify-between m-auto leading-normal">
-//         <h5 class="mb-2 text-2xl text-center  font-bold tracking-tight text-gray-900 dark:text-white">{slide.title}</h5>
-//         <p class="mb-3 font-normal text-2xl text-center text-gray-700 dark:text-gray-400 m-auto" >{slide.alt}</p>
+//     <div className="flex flex-col lg:ml-96 justify-between m-auto leading-normal">
+//         <h5 className="mb-2 text-2xl text-center  font-bold tracking-tight text-gray-900 dark:text-white">{slide.title}</h5>
+//         <p className="mb-3 font-normal text-2xl text-center text-gray-700 dark:text-gray-400 m-auto" >{slide.alt}</p>
 //     </div></a>
 //             </div>
 //           ))}
@@ -181,20 +181,40 @@ const Slide = ({ slide, isActive }) => (
 
 const LogoCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  const handleNext = () => setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-  const handlePrev = () => setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  const handleNext = () => {
+    if (!isPaused) {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }
+  };
+
+  const handlePrev = () => {
+    if (!isPaused) {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    }
+  };
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 10000);
+    const interval = setInterval(handleNext, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]); // Dependency on isPaused
+
+  const handleMouseDown = () => setIsPaused(true);
+  const handleMouseUp = () => setIsPaused(false);
+  const handleTouchStart = () => setIsPaused(true);
+  const handleTouchEnd = () => setIsPaused(false);
+
+
 
   return (
     <div className="view max-w-full mx-auto">
       <div className="slider relative lg:-mt-32 md:-mt-32 sm:-mt-20">
         <h2 className='z-90 slider text-4xl font-bold text-center bg-white p-2'>Our Past Experience</h2>
-        <div className="lg:overflow-hidden relative h-56 sm:h-64 md:h-80 lg:h-96">
+        <div className="lg:overflow-hidden relative h-56 sm:h-64 md:h-80 lg:h-96" onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}>
           {slides.map((slide, index) => (
             <Slide key={slide.id} slide={slide} isActive={currentIndex === index} />
           ))}
@@ -231,3 +251,5 @@ const LogoCarousel = () => {
 };
 
 export default LogoCarousel;
+
+

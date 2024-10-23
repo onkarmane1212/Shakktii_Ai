@@ -30,44 +30,44 @@ const services = () => {
     const content1 = [
       {
         title: "Digital Marketing",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames."
+        description: "Digital marketing, also called online marketing, is the promotion of brands to connect with potential customers using the internet and other forms of digital communication."
       },
       {
         title: "Social Media Marketing",
-        description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        description: "Social media marketing is a form of digital marketing that leverages the power of popular social media networks to achieve your marketing and branding goals. But it’s not just about creating business accounts and posting when you feel like it."
       },
      
     ];
     const content2 = [
       {
         title: "Telegram Bot",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames."
+        description: "Telegram bots can do various things, from providing news updates, tracking your headaches, downloading videos and transcribing audio to text."
       },
       {
         title: "WhatsApp Bot",
-        description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        description: "WhatsApp chatbot is an automated software powered by rules or artificial intelligence (AI) and runs on the WhatsApp platform. People communicate with WhatsApp chatbot via the chat interface, like talking to a real person. It's a set of automated replies that simulates a human conversation on WhatsApp."
       },
       
     ];
     const content3 = [
       {
         title: "Content Creation",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames."
+        description: "Content creation or content creative is the act of producing and sharing information or media content for specific audiences, particularly in digital contexts. "
       },
       {
         title: "Ground Intelligence",
-        description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        description: "Voter Sentiment Analysis:- Conduct surveys, focus groups, and interviews to understand voter preferences, issues of concern, and likely voting behavior.Use data analytics to provide predictive insights on voting trends."
       },
     
     ];
     const content4 = [
       {
         title: "AI Voice",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames."
+        description: "At its core, AI voice recognition involves using artificial intelligence to interpret and process human speech, allowing machines to understand and respond to vocal commands. "
       },
       {
         title: "AI Video",
-        description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        description: "Video Intelligence API has pre-trained machine learning models that automatically recognize a vast number of objects, places, and actions in stored and streaming video. Offering exceptional quality out of the box."
       },
       
     ];
@@ -130,17 +130,17 @@ const services = () => {
     
   
     return <>
-    <section class="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
-  <span class="mt-96 pt-14 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
+    <section className="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
+  <span className="mt-96 pt-14 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
     what we're offering 
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-indigo-600 ml-3 w-6 h-6">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="text-indigo-600 ml-3 w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
     </svg>
   </span>
-  <h1 class="text-white text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug">
+  <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug">
     Services Built Specifically for your Business
   </h1>
-  <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
+  <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">
 
 
   
@@ -192,9 +192,8 @@ const services = () => {
         
         </div>
         
-
-    <div class="card -z-1 relative mb-6  p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
-    <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
+        <div className="card relative -z-1 mb-6 p-2 transition-transform duration-700 hover:shadow-lg lg:m-10">
+        <div className=" relative h-56 z-10 overflow-hidden rounded-lg md:h-96">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images2.map((src, index) => (
                     <div
@@ -246,7 +245,7 @@ const services = () => {
      </div>
 
 
-    <div class=" card -z-1 relative mb-6 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div className=" card -z-1 relative mb-6 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images3.map((src, index) => (
@@ -297,7 +296,7 @@ const services = () => {
        
    
      </div>
-    <div class="relative mb-6 card -z-1 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
+    <div className="relative mb-6 card -z-1 bg-gray-800 p-2 transition-transform duration-300 hover:shadow-lg lg:m-10">
     <div id="default-carousel" className="relative w-full z-10" data-carousel="slide">
             <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 {images4.map((src, index) => (
@@ -312,7 +311,7 @@ const services = () => {
           style={{ opacity: currentIndex4 === index ? 1 : 0.5 }}
           alt={`Image ${index + 1}`}
         />
-            <div class="relative  inset-0   flex flex-col  items-center justify-center text-white z-10 bg-gray-800 bg-opacity-50">
+            <div className="relative  inset-0   flex flex-col  items-center justify-center text-white z-10 bg-gray-800 bg-opacity-50">
             <h2 className="font-playfair lg:pt-36 pt-10 text-2xl xl:text-3xl font-bold text-center">{content4[index].title}</h2>
           <p className="pb-10 lg:pb-44 transition-colors duration-300 text-center">{content4[index].description}</p>
            </div>
