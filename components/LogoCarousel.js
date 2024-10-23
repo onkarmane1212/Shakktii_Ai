@@ -210,7 +210,7 @@ const LogoCarousel = () => {
   return (
     <div className="view max-w-full mx-auto">
       <div className="slider relative lg:-mt-32 md:-mt-32 sm:-mt-20">
-        <h2 className='z-90 slider text-4xl font-bold text-center bg-white p-2'>Our Past Experience</h2>
+        <h2 id='Experience' className='z-90 slider text-4xl font-bold text-center bg-white p-2'>Our Past Experience</h2>
         <div className="lg:overflow-hidden relative h-56 sm:h-64 md:h-80 lg:h-96" onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
         onTouchStart={handleTouchStart}

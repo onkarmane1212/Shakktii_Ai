@@ -109,12 +109,13 @@ const Footer = () => {
           </div>
   
           <section>
-            
-            <ul className="links">
-              <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Services</a></li>
+            <ul className="links ">
+              <li><a href="/">Home</a></li>
+              <li><a href='#about'>Contact US</a></li>
+              <li><a href="#Experience">Past Experience</a></li>
+              <li><a href="#services">Services</a></li>
             </ul>
+            <ul><li id="about">Email: Shakktii.ai@gmail.com</li></ul>
             <p className="legal">© 2024 All rights reserved</p>
           </section>
         </footer>

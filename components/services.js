@@ -130,14 +130,14 @@ const services = () => {
     
   
     return <>
-    <section className="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
-  <span className="mt-96 pt-14 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
+    <section  className=" min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center">
+  <span id='services' className="mt-96 pt-14 text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center">
     what we're offering 
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="text-indigo-600 ml-3 w-6 h-6">
       <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
     </svg>
   </span>
-  <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug">
+  <h1  className="text-white  text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug">
     Services Built Specifically for your Business
   </h1>
   <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto">

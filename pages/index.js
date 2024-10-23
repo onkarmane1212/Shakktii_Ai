@@ -93,7 +93,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <video className="background-video" autoPlay muted loop>
+      <video id="Home" className="background-video" autoPlay muted loop>
         <source src="/1019.mp4" type="video/mp4" />
       </video>
 

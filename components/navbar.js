@@ -33,8 +33,9 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-4">
             <NavLink href="/" label="HOME" />
-            <NavLink href="/about" label="ABOUT US" />
-            <NavLink href="/services" label="SERVICES" />
+            <NavLink href="#about" label="CONTACT US" />
+            <NavLink href="#Experience" label="Past Experience"  />
+            <NavLink href="#services" label="SERVICES" />
           </div>
 
           {/* Mobile Menu Button */}
@@ -71,8 +72,9 @@ const Navbar = () => {
         )}
       >
         <NavLink href="/" label="HOME" isMobile />
-        <NavLink href="/about" label="ABOUT US" isMobile />
-        <NavLink href="/services" label="SERVICES" isMobile />
+        <NavLink href="#about" label="CONTACT US" isMobile />
+        <NavLink href="#Experience" label="Past Experience" isMobile />
+        <NavLink href="#services" label="SERVICES" isMobile />
       </div>
     </nav>
   );
