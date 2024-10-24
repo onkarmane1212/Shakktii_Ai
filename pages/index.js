@@ -93,15 +93,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <video id="Home" className="background-video" autoPlay muted loop>
-        <source src="/1019.mp4" type="video/mp4" />
-      </video>
+      <img id="Home" className="background-video desktop "src="/ai1.jpg"   />
+      <img id="HomeMobile" class="background-video mobile" src="/ai2.jpg" />
+        {/* <source src="/1019.mp4" type="video/mp4" /> */}
+      {/* </video> */}
+   
+
+
 
       <div className="m-auto flex justify-center mb-28">
-        <div className="content">
-          <img src="/Logo.gif" alt="Logo" className="h-60 w-auto m-auto" />
-          <h1 className="text-center font-bold text-4xl">Shakktii AI</h1>
-          <div className="container">
+        <div className="content"><div className="main">
+          <img src="/Logo.gif" alt="Logo" className="h-60  w-auto m-auto logo" /></div>
+          <h1 className="text-center mt-5 font-bold text-4xl h1">Shakktii AI</h1>
+          <div className="container mb-10">
             <span className="text-xl font-semibold text-center animated-text"></span>
           </div>
         </div>
