@@ -72,11 +72,9 @@ body {
   display: none; /* Hide mobile image by default */
 }
 
-@media (max-width: 1440px) {
-  .logo{
-    margin-top: 0px;
-  }
-}
+
+
+
 
 @media (max-width: 768px) {
   .desktop {
@@ -95,13 +93,14 @@ body {
      height: 9em;
    }
    .main{
-     margin-top: 0.7em;
+     margin-top: -4em;
      margin-left: -4em;
    }
    .h1{
      margin-top: 3em;
    }
 }
+
 
 
 

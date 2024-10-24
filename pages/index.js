@@ -103,7 +103,7 @@ export default function Home() {
 
       <div className="m-auto flex justify-center mb-28">
         <div className="content"><div className="main">
-          <img src="/Logo.gif" alt="Logo" className="h-60  w-auto m-auto logo" /></div>
+          <img src="/Logo.gif" alt="Logo" className="h-60 m-auto w-auto sm:mt-10 md:mt-10 lg:mt-10 xl:mt-10  logo" /></div>
           <h1 className="text-center mt-5 font-bold text-4xl h1">Shakktii AI</h1>
           <div className="container mb-10">
             <span className="text-xl font-semibold text-center animated-text"></span>
