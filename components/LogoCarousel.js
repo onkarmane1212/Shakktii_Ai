@@ -222,7 +222,7 @@ const LogoCarousel = () => {
 
         <button
           type="button"
-          className="absolute top-0 left-0 z-30 flex justify-center items-center h-full cursor-pointer group"
+          className="absolute top-0 left-0 z-30 flex justify-center items-center h-full  group"
           onClick={handlePrev}
           aria-label="Previous"
         >
@@ -235,7 +235,7 @@ const LogoCarousel = () => {
 
         <button
           type="button"
-          className="absolute top-0 right-0 z-30 flex justify-center items-center h-full cursor-pointer group"
+          className="absolute top-0 right-0 z-30 flex justify-center items-center h-full  group"
           onClick={handleNext}
           aria-label="Next"
         >

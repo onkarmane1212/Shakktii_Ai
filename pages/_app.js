@@ -30,7 +30,7 @@ import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import LogoCarousel from "@/components/LogoCarousel";
-// import Slider from "@/components/slider";
+import Slider from "@/components/slider";
 import Footer from "@/components/footer";
 
 export default function App({ Component, pageProps }) {
@@ -41,7 +41,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         <LogoCarousel />
         <Services />
-        {/* <Slider /> */}
+        <Slider />
       </main>
       <Footer />
     </div>

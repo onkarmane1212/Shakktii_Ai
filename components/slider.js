@@ -119,44 +119,44 @@ import React, { useState , useEffect } from 'react';
 // export default Slider;
 
 
-// const Slider = () => {
-//   return (
-// <>
-// <div className='flex flex-col items-start m-10'>
-//     <div className='mb-10 p-10 bg-white flex flex-col-reverse md:flex-row justify-between border-l-4 border-b-4 border-solid rounded-bl-full w-full custom-shadow'>
-//         <div className='text-center flex justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
-//         <h2 className='font-bold text-2xl'>hiii</h2>
-//             <p className=''>hiii</p>
-//         </div>
-//         <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
-//     </div>
-//     <div className='mb-4 p-10 bg-white flex flex-col md:flex-row justify-between border-r-4 border-b-4 border-solid rounded-br-full w-full custom-shadow1'>
-//         <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
-//         <div className='text-center flex flex-col justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
-//         <h2 className='font-bold text-2xl'>hiii</h2>
-//             <p className=''>Inspired by Shree Narendra Modi, Puushkar an ISB Alum became the Founding Member of Citizens for Accountable Governance, the official team of Shree Narendra Modi’s Prime Ministerial campaign</p>
-//         </div>
-//     </div>
-//     <div className='mb-4 p-10 bg-white flex flex-col-reverse md:flex-row justify-between border-l-4 border-b-4 border-solid rounded-bl-full w-full custom-shadow'>
-//         <div className='text-center flex justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
-//             <h2 className='font-bold text-2xl'>hiii</h2>
-//         </div>
-//         <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
-//     </div>
-//     <div className='mb-4 p-10 bg-white flex flex-col md:flex-row justify-between border-r-4 border-b-4 border-solid rounded-br-full w-full   custom-shadow1'>
-//         <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
-//         <div className='text-center flex justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
-//         <h2 className='font-bold text-2xl'>hiii</h2> 
-//         </div>
-//     </div>
+const Slider = () => {
+  return (
+<>
+<div className='flex flex-col items-start m-10'>
+    <div className='mb-10 p-10 bg-white flex flex-col-reverse md:flex-row justify-between border-l-4 border-b-4 border-solid rounded-bl-full w-full custom-shadow'>
+        <div className='text-center flex justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
+        <h2 className='font-bold text-2xl'>hiii</h2>
+            <p className=''>hiii</p>
+        </div>
+        <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
+    </div>
+    <div className='mb-4 p-10 bg-white flex flex-col md:flex-row justify-between border-r-4 border-b-4 border-solid rounded-br-full w-full custom-shadow1'>
+        <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
+        <div className='text-center flex flex-col justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
+        <h2 className='font-bold text-2xl'>hiii</h2>
+            <p className=''>Inspired by Shree Narendra Modi, Puushkar an ISB Alum became the Founding Member of Citizens for Accountable Governance, the official team of Shree Narendra Modi’s Prime Ministerial campaign</p>
+        </div>
+    </div>
+    <div className='mb-4 p-10 bg-white flex flex-col-reverse md:flex-row justify-between border-l-4 border-b-4 border-solid rounded-bl-full w-full custom-shadow'>
+        <div className='text-center flex justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
+            <h2 className='font-bold text-2xl'>hiii</h2>
+        </div>
+        <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
+    </div>
+    <div className='mb-4 p-10 bg-white flex flex-col md:flex-row justify-between border-r-4 border-b-4 border-solid rounded-br-full w-full   custom-shadow1'>
+        <img src='/digital.jpg' className='mr-0 md:mr-2 top-0 right-0 h-64 w-64 object-cover' />
+        <div className='text-center flex justify-center  h-46 ml-0 md:ml-28 w-full md:w-80'>
+        <h2 className='font-bold text-2xl'>hiii</h2> 
+        </div>
+    </div>
 
 
 
    
-// </div>
+</div>
 
 
 
-//     </>)}
+    </>)}
 
-// export default Slider;
+export default Slider;

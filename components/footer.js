@@ -85,7 +85,7 @@ const Footer = () => {
           `}
         </style>
         <footer className="relative">
-          <div className="background mt-20">
+          <div className="background mt-10">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900">
               <defs>
                 <linearGradient id="bg" x2="0%" y2="100%">
