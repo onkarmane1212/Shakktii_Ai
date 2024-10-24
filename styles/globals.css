@@ -72,6 +72,11 @@ body {
   display: none; /* Hide mobile image by default */
 }
 
+@media (max-width: 1440px) {
+  .logo{
+    margin-top: 0px;
+  }
+}
 
 @media (max-width: 768px) {
   .desktop {
