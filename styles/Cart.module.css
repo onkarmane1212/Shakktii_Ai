@@ -1,0 +1,13 @@
+/* Hide boxes initially */
+.box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Add animation when 'show' class is applied */
+  .box.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
