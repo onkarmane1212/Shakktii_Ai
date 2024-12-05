@@ -161,7 +161,7 @@ payments.
               </div>
             </div>
             <div className="h-1/2">
-                <h3 clclassNameass="font-bold text-white leading-tight transition duration-300 text- group-hover:underline">Content creation</h3>
+                <h3 className="font-bold text-white leading-tight transition duration-300 text- group-hover:underline">Content creation</h3>
               <p className="text-white pb-4 opacity-0 transition duration-300 group-hover:opacity-100">We create various types of advertising for the company, including blog posts, 
               videos, infographics, e-books...</p>
               {/* <button class="bg-white text-black text-sm px-3 py-1 font-semibold opacity-0 transition duration-300 group-hover:opacity-100 border-2 border-white focus:border-black focus:bg-gray-300">Read More</button> */}
